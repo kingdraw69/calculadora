@@ -11,14 +11,16 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button botsumar,botrest,botdivi,botmul;
+    private EditText Num1,Num2;
+    private TextView tvrta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button botsumar,botrest,botdivi,botmul;
-        EditText Num1,Num2;
-        TextView rtar;
+
 
 
         botsumar = findViewById(R.id.botsum);
@@ -28,12 +30,73 @@ public class MainActivity extends AppCompatActivity {
 
         Num1 = findViewById(R.id.num1);
         Num2 = findViewById(R.id.num2);
-        rtar = findViewById(R.id.rta);
+        tvrta = findViewById(R.id.rta);
 
     }
 
     public void clickSumar( View view){
+
+        String num1String = Num1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = Num2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double rta = num1 + num2;
+
+        tvrta.setText(rta.toString());
+
+
+
         Toast.makeText(this, "Sumando", Toast.LENGTH_SHORT).show();
+    }
+    public void clickRestar( View view){
+
+        String num1String = Num1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = Num2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double rta = num1 - num2;
+
+        tvrta.setText(rta.toString());
+
+
+
+        Toast.makeText(this, "Restando", Toast.LENGTH_SHORT).show();
+    }
+    public void clickDivideir( View view){
+
+        String num1String = Num1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = Num2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double rta = num1 / num2;
+
+        tvrta.setText(rta.toString());
+
+
+
+        Toast.makeText(this, "Dividiendo", Toast.LENGTH_SHORT).show();
+    }
+    public void clickMultiplicar( View view){
+
+        String num1String = Num1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = Num2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double rta = num1 * num2;
+
+        tvrta.setText(rta.toString());
+
+
+
+        Toast.makeText(this, "Multiplicando", Toast.LENGTH_SHORT).show();
     }
 
 
