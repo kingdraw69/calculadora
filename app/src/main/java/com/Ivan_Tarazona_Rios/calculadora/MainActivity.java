@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button botsumar,botrest,botdivi,botmul;
+    private Button botsumar,botrest,botdivi,botmul,but1,but2,but3,but4,but5,but6,but7,but8,but9,but0,butborrar,butresultado;
     private EditText Num1,Num2;
     private TextView tvrta;
 
@@ -27,10 +27,26 @@ public class MainActivity extends AppCompatActivity {
         botrest = findViewById(R.id.botres);
         botdivi = findViewById(R.id.botdiv);
         botmul = findViewById(R.id.botpor);
+        but0 = findViewById(R.id.bot0);
+        but1 = findViewById(R.id.bot1);
+        but2 = findViewById(R.id.bot2);
+        but3 = findViewById(R.id.bot3);
+        but4 = findViewById(R.id.bot4);
+        but5 = findViewById(R.id.bot5);
+        but6 = findViewById(R.id.bot6);
+        but7 = findViewById(R.id.bot7);
+        but8 = findViewById(R.id.bot8);
+        but9 = findViewById(R.id.bot9);
+        butresultado = findViewById(R.id.botresultado);
+        butborrar = findViewById(R.id.botkil);
+
 
         Num1 = findViewById(R.id.num1);
         Num2 = findViewById(R.id.num2);
         tvrta = findViewById(R.id.rta);
+
+    }
+    public void click1( View view){
 
     }
 

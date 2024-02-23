@@ -59,54 +59,153 @@
         android:id="@+id/botsum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:onClick="clickSumar"
-        android:text="sumar"
+        android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rta" />
 
     <Button
         android:id="@+id/botres"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:clickable="false"
         android:onClick="clickRestar"
-        android:text="Restar"
+        android:text="-"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botsum" />
 
     <Button
         android:id="@+id/botdiv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:onClick="clickDivideir"
-        android:text="Dividir"
+        android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botres" />
 
     <Button
         android:id="@+id/botpor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:onClick="clickMultiplicar"
-        android:text="Multiplicar"
+        android:text="x"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botdiv" />
+
+    <Button
+        android:id="@+id/bot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="3"
+        app:layout_constraintEnd_toStartOf="@+id/botsum"
+        app:layout_constraintTop_toBottomOf="@+id/rta" />
+
+    <Button
+        android:id="@+id/bot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/bot3"
+        app:layout_constraintTop_toBottomOf="@+id/rta" />
+
+    <Button
+        android:id="@+id/bot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/bot2"
+        app:layout_constraintTop_toBottomOf="@+id/rta" />
+
+    <Button
+        android:id="@+id/bot6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="6"
+        app:layout_constraintEnd_toStartOf="@+id/botres"
+        app:layout_constraintTop_toBottomOf="@+id/bot3" />
+
+    <Button
+        android:id="@+id/bot5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/bot6"
+        app:layout_constraintTop_toBottomOf="@+id/bot2" />
+
+    <Button
+        android:id="@+id/bot4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/bot5"
+        app:layout_constraintTop_toBottomOf="@+id/bot1" />
+
+    <Button
+        android:id="@+id/bot9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@+id/bot6"
+        tools:layout_editor_absoluteX="200dp" />
+
+    <Button
+        android:id="@+id/bot8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/bot9"
+        app:layout_constraintTop_toBottomOf="@+id/bot5" />
+
+    <Button
+        android:id="@+id/bot7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/bot8"
+        app:layout_constraintTop_toBottomOf="@+id/bot4" />
+
+    <Button
+        android:id="@+id/botkil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="="
+        app:layout_constraintEnd_toStartOf="@+id/botpor"
+        app:layout_constraintTop_toBottomOf="@+id/bot9" />
+
+    <Button
+        android:id="@+id/botresultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="C"
+        app:layout_constraintEnd_toStartOf="@+id/botkil"
+        app:layout_constraintTop_toBottomOf="@+id/bot8" />
+
+    <Button
+        android:id="@+id/bot0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/botresultado"
+        app:layout_constraintTop_toBottomOf="@+id/bot7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
